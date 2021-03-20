@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class CalculadoraTeste {
+public class CalculadoraSansungTeste {
 
     @Test
     public void deveSomarDoisValores() throws MalformedURLException {
@@ -19,8 +19,8 @@ public class CalculadoraTeste {
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("deviceName", "emulator-5554");
         desiredCapabilities.setCapability("automationName", "uiautomator2");
-        desiredCapabilities.setCapability("appPackage", "com.android.calculator2");
-        desiredCapabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
+        desiredCapabilities.setCapability("appPackage", "com.sec.android.app.popupcalculator");
+        desiredCapabilities.setCapability("appActivity", "com.sec.android.app.popupcalculator.Calculator");
 
         //driver de conexão e inicializar
         AndroidDriver<WebElement> driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
